@@ -1,5 +1,5 @@
 {
-  "name": "transactional-better-auth",
+  "name": "@usetransactional/better-auth",
   "version": "0.1.0",
   "description": "Better Auth plugin for Transactional Auth",
   "main": "./dist/index.js",
@@ -44,9 +44,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TransactionalHQ/transactional-better-auth.git"
+    "url": "https://github.com/TransactionalHQ/better-auth.git"
   },
   "homepage": "https://usetransactional.com/docs/auth/better-auth",
+  "bugs": {
+    "url": "https://github.com/TransactionalHQ/better-auth/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "peerDependencies": {
     "better-auth": ">=1.0.0"
   },
