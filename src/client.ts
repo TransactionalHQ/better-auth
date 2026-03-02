@@ -7,7 +7,7 @@
  * @example
  * ```typescript
  * import { createAuthClient } from "better-auth/react";
- * import { transactionalClient } from "transactional-better-auth/client";
+ * import { transactionalClient } from "@usetransactional/better-auth/client";
  *
  * export const authClient = createAuthClient({
  *   plugins: [transactionalClient()]
@@ -41,7 +41,7 @@ export { genericOAuthClient };
  * @example
  * ```typescript
  * import { createAuthClient } from "better-auth/react";
- * import { transactionalClient } from "transactional-better-auth/client";
+ * import { transactionalClient } from "@usetransactional/better-auth/client";
  *
  * const authClient = createAuthClient({
  *   plugins: [transactionalClient()]
@@ -102,7 +102,7 @@ export const transactionalClient = (
  *
  * @example
  * ```typescript
- * import { createTransactionalSignInOptions } from "transactional-better-auth/client";
+ * import { createTransactionalSignInOptions } from "@usetransactional/better-auth/client";
  *
  * authClient.signIn.oauth2(createTransactionalSignInOptions({
  *   callbackURL: "/dashboard"

@@ -7,7 +7,7 @@
  * @example
  * ```typescript
  * import { betterAuth } from "better-auth";
- * import { transactional } from "transactional-better-auth";
+ * import { transactional } from "@usetransactional/better-auth";
  *
  * export const auth = betterAuth({
  *   plugins: [

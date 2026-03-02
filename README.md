@@ -1,11 +1,14 @@
-# transactional-better-auth
+# @usetransactional/better-auth
+
+[![npm version](https://badge.fury.io/js/%40usetransactional%2Fbetter-auth.svg)](https://www.npmjs.com/package/@usetransactional/better-auth)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official [Better Auth](https://better-auth.com) plugin for [Transactional Auth](https://usetransactional.com/docs/auth).
 
 ## Installation
 
 ```bash
-npm install transactional-better-auth better-auth
+npm install @usetransactional/better-auth better-auth
 ```
 
 ## Quick Start
@@ -15,7 +18,7 @@ npm install transactional-better-auth better-auth
 ```typescript
 // lib/auth.ts
 import { betterAuth } from "better-auth";
-import { transactional } from "transactional-better-auth";
+import { transactional } from "@usetransactional/better-auth";
 
 export const auth = betterAuth({
   database: { /* your database config */ },
@@ -34,7 +37,7 @@ export const auth = betterAuth({
 ```typescript
 // lib/auth-client.ts
 import { createAuthClient } from "better-auth/react";
-import { transactionalClient } from "transactional-better-auth/client";
+import { transactionalClient } from "@usetransactional/better-auth/client";
 
 export const authClient = createAuthClient({
   plugins: [transactionalClient()]
@@ -56,7 +59,7 @@ signIn.oauth2({
 Or use the helper function:
 
 ```typescript
-import { createTransactionalSignInOptions } from "transactional-better-auth/client";
+import { createTransactionalSignInOptions } from "@usetransactional/better-auth/client";
 
 // Creates { providerId: "transactional", callbackURL: "/dashboard" }
 signIn.oauth2(createTransactionalSignInOptions({
@@ -230,7 +233,7 @@ By default, the plugin maps Transactional OIDC claims to Better Auth user fields
 ### Server Plugin
 
 ```typescript
-import { transactional } from "transactional-better-auth";
+import { transactional } from "@usetransactional/better-auth";
 
 const plugin = transactional(options: TransactionalOptions);
 ```
@@ -238,7 +241,7 @@ const plugin = transactional(options: TransactionalOptions);
 ### Client Plugin
 
 ```typescript
-import { transactionalClient, createTransactionalSignInOptions } from "transactional-better-auth/client";
+import { transactionalClient, createTransactionalSignInOptions } from "@usetransactional/better-auth/client";
 
 // Add the plugin
 const authClient = createAuthClient({
