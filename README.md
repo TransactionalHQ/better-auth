@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40usetransactional%2Fbetter-auth.svg)](https://www.npmjs.com/package/@usetransactional/better-auth)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Official [Better Auth](https://better-auth.com) plugin for [Transactional Auth](https://usetransactional.com/docs/auth).
+Official [Better Auth](https://better-auth.com) plugin for [Transactional Auth](https://usetransactional.com/docs/sdks/auth/better-auth).
 
 ## Installation
 
